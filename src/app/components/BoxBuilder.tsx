@@ -180,7 +180,7 @@ export function BoxBuilder({ onAddToCart }: BoxBuilderProps) {
         <h4 className="text-2xl mb-6 text-primary" style={{ fontFamily: "'Chelsea Market', cursive" }}>
           2. Choisis tes saveurs
         </h4>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-6">
           {miniBabkaFlavors.map(flavor => {
             const count = selectedFlavors[flavor.id] || 0;
             return (
