@@ -133,7 +133,7 @@ export function BoxBuilder({ onAddToCart }: BoxBuilderProps) {
                 setSelectedSize(box);
                 setSelectedFlavors({});
               }}
-              className={`aspect-square min-w-0 flex flex-col items-center justify-center border p-3 text-center transition-all sm:p-5 ${
+              className={`aspect-square md:aspect-auto min-w-0 flex flex-col items-center justify-center border p-3 text-center transition-all md:p-6 ${
                 selectedSize.size === box.size
                   ? 'border-primary bg-primary text-primary-foreground'
                   : 'border-primary/30 bg-[#F7F2EA] text-primary hover:border-primary hover:bg-[#EAD6B3]'
