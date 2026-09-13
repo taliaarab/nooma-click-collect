@@ -125,7 +125,7 @@ export function BoxBuilder({ onAddToCart }: BoxBuilderProps) {
         <h4 className="text-2xl mb-6 text-primary" style={{ fontFamily: "'Chelsea Market', cursive" }}>
           1. Choisis ta taille
         </h4>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <div className="grid grid-cols-4 gap-2 sm:gap-4">
           {boxSizes.map(box => (
             <button
               key={box.size}
