@@ -136,7 +136,7 @@ export function BoxBuilder({ onAddToCart }: BoxBuilderProps) {
               className={`p-6 border transition-all ${
                 selectedSize.size === box.size
                   ? 'border-primary bg-primary text-primary-foreground'
-                  : 'border-primary/20 hover:border-primary'
+                  : 'border-primary/30 bg-[#F7F2EA] text-primary hover:border-primary hover:bg-[#EAD6B3]'
               }`}
             >
               <div className="text-3xl mb-2" style={{ fontFamily: "'Chelsea Market', cursive" }}>
