@@ -148,11 +148,12 @@ export function Shop() {
       <div className="mx-auto w-full max-w-[1440px] px-5 sm:px-8 lg:px-12 xl:px-16">
         <div className="mb-20">
           <div className="text-sm uppercase tracking-[0.3em] text-foreground/60 mb-6">Commander en ligne</div>
-          <h2 className="text-5xl md:text-7xl mb-8 text-foreground leading-tight" style={{ fontFamily: "'Chelsea Market', cursive" }}>
-            Click &
-            <br />
-            <span className="text-secondary">Collect</span>
-          </h2>
+          <h2
+  className="mb-8 whitespace-nowrap text-4xl leading-tight text-foreground sm:text-5xl md:text-7xl"
+  style={{ fontFamily: "'Chelsea Market', cursive" }}
+>
+  Click & <span className="text-secondary">Collect</span>
+</h2>
           <p className="text-xl text-foreground/70 max-w-2xl leading-relaxed">
             Commandez en ligne et récupérez vos produits en boutique.
             Simple, rapide, délicieux.
