@@ -125,7 +125,7 @@ export function BoxBuilder({ onAddToCart }: BoxBuilderProps) {
         <h4 className="text-2xl mb-6 text-primary" style={{ fontFamily: "'Chelsea Market', cursive" }}>
           1. Choisis ta taille
         </h4>
-        <div className="grid grid-cols-4 gap-2 sm:gap-4">
+        <div className="grid grid-cols-2 gap-3 md:grid-cols-4 md:gap-4">
           {boxSizes.map(box => (
             <button
               key={box.size}
@@ -133,7 +133,7 @@ export function BoxBuilder({ onAddToCart }: BoxBuilderProps) {
                 setSelectedSize(box);
                 setSelectedFlavors({});
               }}
-              className={`p-6 border transition-all ${
+              className={`aspect-square min-w-0 flex flex-col items-center justify-center border p-3 text-center transition-all sm:p-5 ${
                 selectedSize.size === box.size
                   ? 'border-primary bg-primary text-primary-foreground'
                   : 'border-primary/30 bg-[#F7F2EA] text-primary hover:border-primary hover:bg-[#EAD6B3]'
